@@ -1,0 +1,15 @@
+2021-05-24T07:09:28+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\wordpress\wp-includes\option.php:34
+Stack trace:
+#0 C:\wamp64\www\wordpress\wp-includes\option.php(34): trim('timezone_string')
+#1 C:\wamp64\www\wordpress\wp-includes\functions.php(5769): get_option('timezone_string')
+#2 C:\wamp64\www\wordpress\wp-includes\class-wp-hook.php(294): wp_timezone_override_offset(false)
+#3 C:\wamp64\www\wordpress\wp-includes\plugin.php(212): WP_Hook->apply_filters(false, Array)
+#4 C:\wamp64\www\wordpress\wp-includes\option.php(82): apply_filters('pre_option_gmt_...', false, 'gmt_offset', 0)
+#5 C:\wamp64\www\wordpress\wp-content\plugins\woocommerce\includes\wc-formatting-functions.php(805): get_option('gmt_offset', 0)
+#6 C:\wamp64\www\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php(838): wc_timezone_offset()
+#7 C:\wamp64\www\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(740): WC_Data->set_date_prop('date_created', 16212367 in C:\wamp64\www\wordpress\wp-includes\option.php on line 34
+
+2021-05-24T07:36:15+00:00 CRITICAL Cannot redeclare bbloomer_show_stock_shop() (previously declared in C:\wamp64\www\wordpress\wp-content\plugins\woocommerce\templates\content-product.php:69) in C:\wamp64\www\wordpress\wp-content\plugins\woocommerce\templates\content-product.php on line 69
+
+2021-05-24T07:49:44+00:00 CRITICAL syntax error, unexpected 'do_action' (T_STRING), expecting ',' or ';' in C:\wamp64\www\wordpress\wp-content\plugins\woocommerce\templates\content-product.php on line 57
+
